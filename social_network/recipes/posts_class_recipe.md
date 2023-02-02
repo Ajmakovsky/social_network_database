@@ -159,10 +159,10 @@ posts[0].content # =>  'Coding is fun!'
 posts[0].views # => '200'
 posts[0].user_id # => '1'
 
-posts[0].title # =>  'Horses'
-posts[0].content # =>  'Horses are majestic.'
-posts[0].views # => '1000'
-posts[0].user_id # => '2'
+posts[1].title # =>  'Horses'
+posts[1].content # =>  'Horses are majestic.'
+posts[1].views # => '1000'
+posts[1].user_id # => '2'
 
 # 2
 # Get a single post
@@ -219,9 +219,8 @@ Running the SQL code present in the seed file will empty the table and re-insert
 
 This is so you get a fresh table contents every time you run the test suite.
 
-# EXAMPLE
 
-# file: spec/student_repository_spec.rb
+# file: spec/post_repository_spec.rb
 
 def reset_students_table
   seed_sql = File.read('spec/seeds_students.sql')

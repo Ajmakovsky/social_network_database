@@ -225,9 +225,8 @@ Running the SQL code present in the seed file will empty the table and re-insert
 
 This is so you get a fresh table contents every time you run the test suite.
 
-# EXAMPLE
 
-# file: spec/student_repository_spec.rb
+# file: spec/user_repository_spec.rb
 
 def reset_students_table
   seed_sql = File.read('spec/seeds_students.sql')
